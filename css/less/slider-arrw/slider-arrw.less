@@ -1,4 +1,12 @@
 .slider-arrw{
+	@media @tablet {
+		width: 90%;
+		width: ~"calc(100% - 50px)";
+		margin: 0 auto;
+	}
+}
+
+.slider-arrw{
 	padding-top: 40px;
 	position: relative;
 }
@@ -8,9 +16,6 @@
 	position: relative;
 	white-space: nowrap;
 	overflow: hidden;
-
-	@media @tablet{
-	}	
 }
 
 .slider-arrw__item{
@@ -29,6 +34,10 @@
 	.top(50%,-,21px);
 	.setBackgroundImage(@sldr-arrw-icn);
 	cursor: pointer;
+
+	@media @tablet{
+		.top(50%,-,0px);
+	}	
 }
 
 .slider-arrw_arrow-left{

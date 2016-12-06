@@ -199,18 +199,18 @@
 		</div>
 	</section>
 	<section class="section contact">
-		<div class="contact_contact-background section_position-tp4">
+		<div class="wrapper contact_contact-background section_position-tp4">
 			<div class="title-3 contact_title-3">
 				<h3 class="title-3__h3 hr-line contact_h3 contact_hr-line">Contact Me</h2>	
 			</div>
 
 			<div class="contact-form">
-				<form action="#" class="form">
-					<input class="form__item form__item-1" type="text" placeholder="Name">
-					<input class="form__item form__item-2" type="email" placeholder="E-mail">
-					<textarea class="form__item form__item-3"  placeholder="Message"></textarea>
+				<form class="form" action="mailto:savienkov.ao@mail.ru" method="post" name="userMemberForm" spellcheck ectype="text/plain">
+					<input name="name" required class="form__item form__item-1" type="text" placeholder="Name" maxlength="255">
+					<input name="email" required class="form__item form__item-2" type="email" placeholder="E-mail" maxlength="255">
+					<textarea name="text" class="form__item form__item-3"  placeholder="Message"></textarea>
 					<div class="contact-button">
-					<button class="button button_filled">Submit</button>
+					<button class="button button_filled" maxlength="800">Submit</button>
 				</div>
 					
 				</form>
