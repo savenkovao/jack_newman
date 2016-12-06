@@ -1,0 +1,63 @@
+.slider-bttn{
+	text-align: center;
+}
+
+.slider-bttn__inner{
+	padding: 135px 19.33% 75px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+
+	@media @tablet{
+		padding: 35px 5% 25px;
+	}	
+}
+
+.slider-bttn__inner-box{
+	overflow: hidden;
+}
+
+.slider-bttn__nav{
+	display: inline-block;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+
+.slider-bttn__item{
+	width: 100%;
+	display: inline-block;
+}
+
+
+.slider-bttn__text{
+	margin:0;
+	color: @txt-clr;
+	text-align: center;
+	font-size: @txt-fs; 
+	white-space: normal;
+}
+
+.slider-bttn__name{
+	display: inline-block;
+	margin-top: 25px; 
+	color: @txt-clr;
+	font-size: @nm-fs;
+}
+
+.slider-bttn_button{
+	display: inline-block;
+	margin-right: 25px;
+	width: 10px;
+	height: 10px;
+	.setBorder(1px, white, 50%);
+	cursor: pointer;
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+}
+
+
+
+

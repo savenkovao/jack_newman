@@ -1,0 +1,35 @@
+.form{
+}
+.form__item{
+	display: block;
+	margin: 20px auto 0;
+	width: 480px;
+	max-width: 480px;
+	height: 60px;
+	padding-left: 20px;
+	font-size: @inpt-fs;
+	line-height: 60px;
+	color: @inpt-clr;
+	background-color: transparent;
+	.setBorder(1px, @inpt-brdr-clr, 4px);	
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	@media @tablet{
+		width: 95%;
+		max-width: 95%;
+	}
+
+
+}
+.form__item-1{}
+.form__item-2{}
+.form__item-3{
+	height: 150px;	
+	max-height: 150px;	
+	line-height: 35px;
+	vertical-align: top;
+	word-wrap: break-word;
+}

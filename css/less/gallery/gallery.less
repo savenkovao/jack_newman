@@ -1,0 +1,153 @@
+.gallery{
+	vertical-align: top;
+	text-align: justify;
+}
+
+.gallery__photo-block{
+	vertical-align: top;
+	display: inline-block;
+	height: auto;
+	overflow: hidden;
+}
+
+.gallery__photo-block-1{	
+	width: 67.93%;
+	margin-right: 3.3%;
+
+	@media @tablet {
+		width: 100%;
+	}
+}
+
+.gallery__photo-block-2{
+	width: 28.77%;
+	text-align: center;
+
+	@media @tablet {
+		width: 100%;
+	}
+}
+
+.gallery__photo-item{
+	position: relative;
+	overflow: hidden;
+
+	&:hover .gallery__description{
+		// display: block;
+		background-color: rgba(36, 36, 36, 0.65);
+	}
+
+	&:hover .gallery__title-sm,
+	&:hover .gallery__title,
+	&:hover .gallery__text-sm,
+	&:hover .gallery__text{
+		color: white;
+	}
+
+	&:hover .gallery__img {
+  		filter: ~"grayscale(100%)";
+	}
+}
+
+.gallery__photo-item-1{
+}
+
+.gallery__photo-item-2{
+	width: 100%;
+
+	@media @tablet {
+		margin-top: 5%;
+	}
+}
+
+.gallery__photo-item-3{
+	width: 100%;
+	margin-top: 9.85%;
+
+	@media @tablet {
+		margin-top: 5%;
+	}
+}
+
+.gallery__img {
+	width: 100%;
+	height: auto;
+	transition: filter 0.4s linear;
+}
+
+.gallery__link{
+	text-decoration: none;
+	&:hover,
+	&:visited,
+	&:focus,
+	&:active{
+		text-decoration: none;
+	}
+}
+
+.gallery__description{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	text-align: center;
+	transition: background-color 0.4s linear;
+
+	&::after {
+		content: "";
+    	display: inline-block;
+    	height: 100%;
+    	vertical-align: middle;    	
+	}
+}
+
+.gallery__description-cont{
+	display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.gallery__title-sm,
+.gallery__title{
+	margin: 0 auto;	
+	color: transparent;
+	text-align: center;
+	font-size: @glr-ttl-fs;
+	text-transform: uppercase;
+	transition: color 0.4s linear;
+}
+
+.gallery__title-sm{
+	font-size: @glr-ttl-fs-sm;
+}
+
+.gallery__text-sm,
+.gallery__text{
+	width: 63.53%;
+	margin: 0 auto;	
+	color: transparent;
+	text-align: center;
+	font-size: @glr-txt-fs;
+	padding-top: 6.3%;
+	transition: color 0.4s linear;
+
+	@media @tablet {
+		width: 90%;
+	}
+}
+
+.gallery__text-sm{
+	width: 90%;
+	font-size: @glr-txt-fs-sm;
+}
+
+
+
+
+
+
+
+
+
