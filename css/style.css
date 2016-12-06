@@ -472,12 +472,12 @@ body {
   }
 }
 .slider-arrw_arrow-left {
-  left: 0%;
+  left: -7%;
   left: calc(0% - 25px);
   background-position: top;
 }
 .slider-arrw_arrow-right {
-  right: 0%;
+  right: -7%;
   right: calc(0% - 25px);
   background-position: bottom;
 }
@@ -628,8 +628,8 @@ body {
   text-align: center;
 }
 .contact_hr-line::before {
-  left: 50%;
-  left: calc(50% - 4.125em);
+  left: 0;
+  left: calc(50% - 4.25em);
 }
 .contact-form {
   padding-top: 60px;

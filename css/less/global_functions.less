@@ -27,13 +27,13 @@
 	bottom: ~"calc(@{parent}"~"@{operator}"~"@{child})";
 }
 
-.left(@parent, @operator:"-", @child){
-	left: @parent;
+.left(@parent, @operator:"-", @child, @default:@parent){
+	left: @default;
 	left: ~"calc(@{parent}"~"@{operator}"~"@{child})";
 }
 
-.right(@parent, @operator:"-", @child){
-	right: @parent;
+.right(@parent, @operator:"-", @child, @default:@parent){
+	right: @default;
 	right: ~"calc(@{parent}"~"@{operator}"~"@{child})";
 }
 
