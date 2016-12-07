@@ -9,10 +9,22 @@
 
 .button_filled {
 	.setButton (white);
+	transition: background-color 0.2s linear;
+	&:active,
+	&:hover{
+		background-color: #a22b28;
+	}
 }
 
 .button_bordered{
 	.setButton (@btnColor);
+	transition: background-color 0.2s cubic-bezier(0.1, -0.6, 0.2, 0), color 0.2s cubic-bezier(0.1, -0.6, 0.2, 0);
+
+	&:active,
+	&:hover{
+		background-color: @btnColor;
+		color: white;
+	}
 }
 
 

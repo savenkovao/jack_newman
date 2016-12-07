@@ -5,12 +5,16 @@
 	padding:0;
 
 	@media @tablet{
-		display: block;
-		margin-top: 10px;		
-		position: absolute;
+		display: none;
+		position: fixed;
+		padding-top: 40px;
+		top: 0;		
 		right: 0;
+		z-index: 1;
 		width: 100%;
-	    background-color: rgba(0,0,0,0.7);
-
+		height: 100%;
+	    background-color: @mn-bgclr;
+	    overflow: scroll;
+	    transition: background-color 2s linear;
 	}
 }

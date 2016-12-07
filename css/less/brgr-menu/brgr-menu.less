@@ -1,11 +1,42 @@
 .brgr-menu{
 	display: none;
 	@media @tablet{
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 20px;
 		display: inline-block;
-		width: 50px;
-		height: 50px;
-		.setBackgroundImage(@brgrMenu);
+		width: 32px;
+		height: 26px;
 		cursor: pointer;		
+		z-index: 2;	
 	}
+
 }
+
+.brgr-menu__stick {
+	display: none;
+	@media @tablet{
+		display: block;
+		height: 4px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		background-color: @brgr-stck-bgclr;
+		transition: all 0.1s linear;
+	}
+	
+}
+.stick-1{
+	top: 0;
+	transform-origin: 0% 0% 0;
+}
+.stick-2{
+	top: 11px;
+}
+.stick-3{
+	top: 22px;
+	transform-origin: 0% 100% 0;
+}
+
 

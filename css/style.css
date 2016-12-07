@@ -53,9 +53,13 @@ body {
 @media screen and (max-width: 767px) {
   .menu__item {
     display: block;
-    line-height: 45px;
+    line-height: 50px;
     margin: 0px;
     text-align: center;
+  }
+  .menu__item:hover .menu__link {
+    color: #be3835;
+    font-weight: 600;
   }
 }
 .menu__link {
@@ -63,18 +67,28 @@ body {
   text-decoration: none;
   font-size: 1.6em;
 }
+@media screen and (max-width: 767px) {
+  .menu__link {
+    color: black;
+  }
+}
 .menu {
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 767px) {
   .menu {
-    display: block;
-    margin-top: 10px;
-    position: absolute;
+    display: none;
+    position: fixed;
+    padding-top: 40px;
+    top: 0;
     right: 0;
+    z-index: 1;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: scroll;
+    transition: background-color 2s linear;
   }
 }
 .title-1__h1 {
@@ -143,27 +157,63 @@ body {
   background-color: #be3835;
   border: 0px solid transparent;
   color: white;
+  transition: background-color 0.2s linear;
+}
+.button_filled:active,
+.button_filled:hover {
+  background-color: #a22b28;
 }
 .button_bordered {
   background-color: transparent;
   border: 2px solid #be3835;
   color: #be3835;
+  transition: background-color 0.2s cubic-bezier(0.1, -0.6, 0.2, 0), color 0.2s cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+.button_bordered:active,
+.button_bordered:hover {
+  background-color: #be3835;
+  color: white;
 }
 .brgr-menu {
   display: none;
 }
 @media screen and (max-width: 767px) {
   .brgr-menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url("../images/design/brgr-menu.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: transparent;
+    width: 32px;
+    height: 26px;
     cursor: pointer;
+    z-index: 2;
   }
+}
+.brgr-menu__stick {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .brgr-menu__stick {
+    display: block;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #be3835;
+    transition: all 0.1s linear;
+  }
+}
+.stick-1 {
+  top: 0;
+  transform-origin: 0% 0% 0;
+}
+.stick-2 {
+  top: 11px;
+}
+.stick-3 {
+  top: 22px;
+  transform-origin: 0% 100% 0;
 }
 .section_position-tp1 {
   padding: 110px 70px 35px;
