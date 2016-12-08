@@ -1,15 +1,19 @@
 .button{	
 	display: inline-block;
 	width: 180px;
-	height: 60px;		
+	height: 60px;	
+	line-height: 63px;	
+	font: @mainFntWght @bttn_fs @mainFntFml;
 	font-size: 20px;	
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	cursor: pointer;
+	border: none;
 }
 
 .button_filled {
 	.setButton (white);
 	transition: background-color 0.2s linear;
+
 	&:active,
 	&:hover{
 		background-color: #a22b28;

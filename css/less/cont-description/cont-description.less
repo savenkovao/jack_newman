@@ -3,14 +3,19 @@
 	font-size: @cnt-hdr-fs;
 	font-weight: 700;
 	margin: 0;
+	letter-spacing: 0.7px;
+
 	@media @tablet {
 		text-align: center;
 	}
 }
 .cont-description__txt{
 	font-size: @cnt-txt-fs;
-	padding-top: 35px;
+	padding-top: 23px;
 	margin: 0;
+	line-height: 23px;
+	
+
 	@media @tablet {
 		text-align: center;
 	}
@@ -18,14 +23,14 @@
 .cont-description__sb-hdr{
 	font-size: @cnt-sb-hdr-fs;
 	font-weight: 700;
-	padding-top: 50px;
+	padding-top: 40px;
 	margin: 0;
 	@media @tablet {
 		text-align: center;
 	}
 }
 .cont-dedescription__ntwrk{
-	padding-top: 30px;
+	padding-top: 23px;
 	@media @tablet {
 		text-align: center;
 	}
@@ -34,10 +39,15 @@
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	margin-right: 20px;
+	margin-right: 16px;
+	transition: filter 0.25s linear;
 
 	&:last-child{
 		margin-right: 0;
+	}
+
+	&:hover {
+		filter: invert(100%);
 	}
 }
 
@@ -46,7 +56,6 @@
 }
 .inst-ic{
 	.setBackgroundImage(@inst-ic);
-
 }
 .lnkdin-ic{
 	.setBackgroundImage(@lnkdin-ic);
