@@ -46,17 +46,26 @@
 		margin-right: 0;
 	}
 
-	&:hover {
-		filter: invert(100%);
-	}
+	// &:hover {
+	// 	filter: invert(100%);
+	// }
 }
 
 .fb-ic{
 	.setBackgroundImage(@fb-ic);
+	&:hover{
+		background-image: url(@fb-ic-inv);
+	}
 }
 .inst-ic{
 	.setBackgroundImage(@inst-ic);
+	&:hover{
+		background-image: url(@inst-ic-inv);
+	}
 }
 .lnkdin-ic{
 	.setBackgroundImage(@lnkdin-ic);
+	&:hover{
+		background-image: url(@lnkdin-ic-inv);
+	}
 }

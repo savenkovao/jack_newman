@@ -592,29 +592,35 @@ body {
 .cont-dedescription__lnk:last-child {
   margin-right: 0;
 }
-.cont-dedescription__lnk:hover {
-  filter: invert(100%);
-}
 .fb-ic {
-  background-image: url("../images/design/fb-ic.jpg");
+  background-image: url("../images/design/fb-ic.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: transparent;
+}
+.fb-ic:hover {
+  background-image: url("../images/design/fb-ic.jpg");
 }
 .inst-ic {
-  background-image: url("../images/design/inst-ic.jpg");
+  background-image: url("../images/design/inst-ic.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: transparent;
 }
+.inst-ic:hover {
+  background-image: url("../images/design/inst-ic.jpg");
+}
 .lnkdin-ic {
-  background-image: url("../images/design/lnkdin-ic.jpg");
+  background-image: url("../images/design/lnkdin-ic.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: transparent;
+}
+.lnkdin-ic:hover {
+  background-image: url("../images/design/lnkdin-ic.jpg");
 }
 .about-photo {
   display: inline-block;
