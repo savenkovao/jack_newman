@@ -464,6 +464,7 @@ body {
 .slider-bttn__item {
   width: 100%;
   display: inline-block;
+  transition: margin-left 0.3s linear;
 }
 .slider-bttn__text {
   margin: 0;
@@ -478,7 +479,7 @@ body {
   color: white;
   font-size: 1.8em;
 }
-.slider-bttn_button {
+.slider-bttn__button {
   display: inline-block;
   margin-right: 25px;
   width: 10px;
@@ -487,8 +488,11 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.slider-bttn_button:last-child {
+.slider-bttn__button:last-child {
   margin-right: 0;
+}
+.slider-bttn__button_sel {
+  background-color: white;
 }
 .slider-arrw {
   position: relative;
@@ -508,6 +512,8 @@ body {
 .slider-arrw__item {
   width: 100%;
   display: inline-block;
+  vertical-align: top;
+  transition: margin-left 0.3s linear;
 }
 .slider-arrw__img {
   width: 100%;
@@ -588,39 +594,34 @@ body {
   height: 40px;
   margin-right: 16px;
   transition: filter 0.25s linear;
+  background-image: url("../images/design/netw-ic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  background-size: initial;
+  transition: background-position 0.1s linear;
 }
 .cont-dedescription__lnk:last-child {
   margin-right: 0;
 }
 .fb-ic {
-  background-image: url("../images/design/fb-ic.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: transparent;
+  background-position: 0px 0px;
 }
 .fb-ic:hover {
-  background-image: url("../images/design/fb-ic.jpg");
+  background-position: 0px -40px;
 }
 .inst-ic {
-  background-image: url("../images/design/inst-ic.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: transparent;
+  background-position: -40px 0px;
 }
 .inst-ic:hover {
-  background-image: url("../images/design/inst-ic.jpg");
+  background-position: -40px -40px;
 }
 .lnkdin-ic {
-  background-image: url("../images/design/lnkdin-ic.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: transparent;
+  background-position: -80px 0px;
 }
 .lnkdin-ic:hover {
-  background-image: url("../images/design/lnkdin-ic.jpg");
+  background-position: -80px -40px;
 }
 .about-photo {
   display: inline-block;

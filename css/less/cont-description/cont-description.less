@@ -41,6 +41,9 @@
 	height: 40px;
 	margin-right: 16px;
 	transition: filter 0.25s linear;
+	.setBackgroundImage(@netw-ic);
+	background-size: initial;
+	transition:background-position 0.1s linear;
 
 	&:last-child{
 		margin-right: 0;
@@ -52,20 +55,20 @@
 }
 
 .fb-ic{
-	.setBackgroundImage(@fb-ic);
+	background-position: 0px 0px; 
 	&:hover{
-		background-image: url(@fb-ic-inv);
+		background-position: 0px -40px; 
 	}
 }
 .inst-ic{
-	.setBackgroundImage(@inst-ic);
+	background-position: -40px 0px; 
 	&:hover{
-		background-image: url(@inst-ic-inv);
+		background-position: -40px -40px; 
 	}
 }
 .lnkdin-ic{
-	.setBackgroundImage(@lnkdin-ic);
+	background-position: -80px 0px; 
 	&:hover{
-		background-image: url(@lnkdin-ic-inv);
+		background-position: -80px -40px; 
 	}
 }
